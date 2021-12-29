@@ -31,8 +31,20 @@ function error(innerText){
     })
     .showToast();
 }
-
-
+var number = "25.1234"
+document.getElementById("originalNumberBox").innerHTML = "<h2>" + number + "</h2>"
+// Round A Number
+function roundNumber(){
+    clearOutput()
+    let number = document.getElementById("inputValue").value
+    if(!number){
+        error("Please enter a floating point number.")
+        return
+    }
+    let roundTheNumber = Math.round(number)
+    let html = "<h1>" + roundTheNumber + "</h1>"
+    showOutput(html)
+}
 
 
 
