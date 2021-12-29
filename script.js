@@ -85,7 +85,27 @@ function throwDice(){
     let html = 'Dice Value: <br> <h1 style= "color: green;">"' + dice + '"</h1>' 
     showOutput(html)
 }
-
+// Generating Strong Password
+function generatePassword(){
+    clearOutput()
+    let length = document.getElementById("inputValue").value
+    if(!length){
+        error("Please type a number to generate strong password.")
+        return
+    }
+    let string = ""
+    let upperCaseAlphabets = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    let lowerCaseAlphabets = "abcdefghijklmnopqrstuvwxyz"
+    let numbers = "0123456789"
+    let symbols = "+-/?<>+,\!@.#$_'%^&*"
+    let possibleString = upperCaseAlphabets + lowerCaseAlphabets + numbers + symbols
+    for(let i = 0; i < length; i++){
+        let randomNumber = Math.random()
+        string += possibleString.charAt(Math.floor(randomNumber * possibleString.length))
+    }
+    let html = '<h5 style= "color:green;">' + string + '</h5>Password is strongly generated<br>and it\'s length is: ' + length + ''
+    showOutput(html)
+}
 
 
 
