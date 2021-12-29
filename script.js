@@ -133,7 +133,22 @@ function controllingLength(){
     let html = "<h1>" + num + "</h1>"
     showOutput(html)
 }
-
+// Calculate GST 
+function calculateGST(){
+    clearOutput()
+    let cost = document.getElementById("inputValue").value
+    if(!cost){
+        error("Please enter the number to check GST.")
+        return
+    }
+    cost = Number(cost)
+    let tax = cost * (10 / 100)
+    let totalCost = cost + tax
+    totalCost = Math.round(totalCost)
+    document.getElementById("outputResult").innerHTML += 'Your bill = <span class= "text-primaryTheme fw-bold fw-18">' + cost + '</span>';
+    document.getElementById("outputResult").innerHTML += '<br>Tax 10% = <span class= "text-danger fw-bold fw-18">' + tax.toFixed(2) + '</span>';
+    document.getElementById("outputResult").innerHTML += '<br>Total amount including tax = <span class= "text-success fw-bold fw-18">' + totalCost + '</span>';
+}
 
 
 
