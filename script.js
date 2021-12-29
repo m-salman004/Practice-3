@@ -10,6 +10,10 @@ function clearInput(){
 function showOutput(outputResult){
     document.getElementById("outputResult").innerHTML += outputResult
 }
+// Input Value
+function inputValue(){
+    return document.getElementById("inputValue").value
+}
 
 
 
