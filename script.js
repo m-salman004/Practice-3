@@ -57,7 +57,18 @@ function ceilNumber(){
     let html = "<h1>" + ceilTheNumber + "</h1>"
     showOutput(html)
 }
-
+// Floor A Number
+function floorNumber(){
+    clearOutput()
+    let number = document.getElementById("inputValue").value
+    if(!number){
+        error("Please type a floating point number. ")
+        return
+    }
+    let floorTheNumber = Math.floor(number)
+    let html = "<h1>" + floorTheNumber + "</h1>"
+    showOutput(html)
+}
 
 
 
