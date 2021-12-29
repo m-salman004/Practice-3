@@ -69,7 +69,13 @@ function floorNumber(){
     let html = "<h1>" + floorTheNumber + "</h1>"
     showOutput(html)
 }
-
+// Generate Random Number
+function generateNumber(){
+    clearOutput()
+    let number = Math.random()
+    let html = "<h1>" + number + "</h1>"
+    showOutput(html)
+}
 
 
 
