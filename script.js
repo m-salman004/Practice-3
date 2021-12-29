@@ -120,7 +120,19 @@ function convertingString(){
     let html = "<h1> " + num + "</h1>"
     showOutput(html)
 }
-
+// Controlling Length
+function controllingLength(){
+    clearOutput()
+    let num = document.getElementById("inputValue").value
+    if(!num){
+        error("Please enter the number in input field")
+        return
+    }
+    num = Number(num)
+    num = num.toFixed(2);
+    let html = "<h1>" + num + "</h1>"
+    showOutput(html)
+}
 
 
 
