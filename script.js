@@ -106,7 +106,20 @@ function generatePassword(){
     let html = '<h5 style= "color:green;">' + string + '</h5>Password is strongly generated<br>and it\'s length is: ' + length + ''
     showOutput(html)
 }
-
+// Converting String
+function convertingString(){
+    clearOutput()
+    let num = document.getElementById("inputValue").value
+    if(!num){
+        error("Please enter the number in input field.")
+        return
+    }
+    //num = parseFloat(num)
+    num = parseInt(num)
+    //num = Number(num)
+    let html = "<h1> " + num + "</h1>"
+    showOutput(html)
+}
 
 
 
