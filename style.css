@@ -13,7 +13,22 @@ h2,h4{
     background-color: #1d3557;
     margin: 5%;
 }
-
+.border-box{
+    border: 1px solid black;
+    padding: 1.5em 3em;
+    margin: 5%;
+}
+.button-c{
+    min-width: 250px ;
+    background-color: #E63946;
+    border:none;
+    color: white;
+    padding: 10px;
+    margin: 2px;
+}
+.button-d{
+    margin: .5% 40%;
+}
 
 
 
