@@ -76,7 +76,15 @@ function generateNumber(){
     let html = "<h1>" + number + "</h1>"
     showOutput(html)
 }
-
+// Throw Dice
+function throwDice(){
+    clearOutput()
+    let number = Math.random()
+    number = (number * 6) + 1
+    let dice = Math.floor(number)
+    let html = 'Dice Value: <br> <h1 style= "color: green;">"' + dice + '"</h1>' 
+    showOutput(html)
+}
 
 
 
