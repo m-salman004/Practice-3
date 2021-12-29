@@ -45,6 +45,18 @@ function roundNumber(){
     let html = "<h1>" + roundTheNumber + "</h1>"
     showOutput(html)
 }
+// Ceil a Number
+function ceilNumber(){
+    clearOutput()
+    let number = document.getElementById("inputValue").value
+    if(!number){
+        error("Please type a floating point number. ")
+        return
+    }
+    let ceilTheNumber = Math.ceil(number)
+    let html = "<h1>" + ceilTheNumber + "</h1>"
+    showOutput(html)
+}
 
 
 
